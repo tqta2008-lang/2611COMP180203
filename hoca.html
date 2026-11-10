@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hồ Cá</title>
+    <style>
+        #hoca {
+            position: fixed;
+            bottom: 0;
+            border: 2px double red;
+            border-top: 0;
+            height: 400px;
+            width: 100%;
+            background-color: aqua;
+            overflow: hidden;
+            box-sizing: border-box;
+        }
+        #ca {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 120px;
+            animation: caboi 30s infinite;
+        }
+        @keyframes caboi {
+            0%   { transform: translate(0, 0); }
+            26%  { transform: translate(300px, 100px); }
+            52%  { transform: translate(800px, 250px); }
+            78%  { transform: translate(500px, 50px) rotate(-90deg); }
+            100% { transform: translate(200px, 250px); }
+        }
+    </style>
+</head>
+<body>
+    <h2>Tạ Quang Tú Anh - 52.01.104.009</h2>
+    <div id="hoca">
+        <img id="ca" src="anh ca.png" alt="Con cá">
+    </div>
+</body>
+</html>
