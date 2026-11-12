@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Menu ngang hai cấp</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .menu_ngang > ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            background-color: #999;
+            display: flex;
+        }
+        .menu_ngang > ul > li {
+            position: relative;
+            border-right: 1px solid #666;
+        }
+        .menu_ngang a {
+            display: block;
+            padding: 12px 20px;
+            color: black;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .menu_ngang a:hover {
+            background-color: #333;
+            color: white;
+        }
+        /* Menu con */
+        .menu_ngang ul ul {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            background-color: #777;
+            min-width: 160px;
+        }
+        .menu_ngang ul ul li {
+            border-bottom: 1px solid #999;
+        }
+        .menu_ngang ul li:hover > ul {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="menu_ngang">
+        <ul>
+            <li><a href="#">Trang chủ</a></li>
+            <li><a href="#">Giới thiệu</a></li>
+            <li>
+                <a href="#">Sản phẩm</a>
+                <ul>
+                    <li><a href="#">Tivi</a></li>
+                    <li><a href="#">Tủ lạnh</a></li>
+                    <li><a href="#">Laptop</a></li>
+                    <li><a href="#">Máy tính bảng</a></li>
+                    <li><a href="#">Điện thoại</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Dịch vụ</a></li>
+            <li><a href="#">Tin tức</a></li>
+            <li><a href="#">Liên hệ</a></li>
+        </ul>
+    </div>
+</body>
+</html>
