@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 3.2.1 - Sự kiện DOM</title>
+    <style>
+        #box {
+            width: 150px;
+            padding: 20px;
+            background-color: lightblue;
+            text-align: center;
+            margin-bottom: 15px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div id="box" onmouseover="this.innerText='Mouse Event'" onmouseout="this.innerText='Hover Me'">
+        Hover Me
+    </div>
+
+    <img id="myImg" src="https://via.placeholder.com/150" width="150" 
+         onmouseover="zoomIn(this)" onmouseout="zoomOut(this)">
+    <br><br>
+
+    <button onclick="alert(new Date())">Hiển thị ngày giờ</button>
+    <br><br>
+
+    <input type="text" id="txtInput" placeholder="Nhập chữ thường..." onkeyup="toUpper()">
+
+    <script>
+        function zoomIn(img) {
+            img.style.width = (img.width * 1.1) + "px";
+        }
+        function zoomOut(img) {
+            img.style.width = "150px";
+        }
+        function toUpper() {
+            let input = document.getElementById("txtInput");
+            input.value = input.value.toUpperCase();
+        }
+    </script>
+</body>
+</html>
