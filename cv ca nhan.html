@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - Tạ Quang Tú Anh</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        body {
+            background-color: #eef2f6;
+            color: #333;
+            line-height: 1.6;
+            padding: 30px 15px;
+        }
+        .cv-container {
+            max-width: 920px;
+            margin: 0 auto;
+            background: #ffffff;
+            display: flex;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        /* CỘT TRÁI */
+        .left-column {
+            width: 35%;
+            background: linear-gradient(180deg, #1b365d 0%, #27496d 100%);
+            color: #ffffff;
+            padding: 35px 25px;
+        }
+        .avatar {
+            width: 145px;
+            height: 145px;
+            border-radius: 50%;
+            object-fit: cover;
+            display: block;
+            margin: 0 auto 22px;
+            border: 4px solid rgba(255, 255, 255, 0.85);
+            background-color: #ccc;
+        }
+        .left-column h2 {
+            font-size: 15px;
+            text-transform: uppercase;
+            letter-spacing: 1.2px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+            padding-bottom: 6px;
+            margin: 26px 0 14px;
+            color: #a8dadc;
+        }
+        .info-list {
+            list-style: none;
+            font-size: 14px;
+        }
+        .info-list li {
+            margin-bottom: 10px;
+            word-break: break-word;
+        }
+        .skill-tag {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.15);
+            padding: 5px 11px;
+            border-radius: 5px;
+            font-size: 13px;
+            margin: 4px 4px 4px 0;
+            transition: background 0.2s;
+        }
+        .skill-tag:hover {
+            background: rgba(255, 255, 255, 0.28);
+        }
+        /* CỘT PHẢI */
+        .right-column {
+            width: 65%;
+            padding: 40px 35px;
+        }
+        .header-name {
+            border-left: 4px solid #1b365d;
+            padding-left: 15px;
+            margin-bottom: 25px;
+        }
+        .header-name h1 {
+            font-size: 30px;
+            color: #1b365d;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            line-height: 1.2;
+        }
+        .header-name p {
+            font-size: 16px;
+            color: #5c6b73;
+            font-weight: 600;
+            margin-top: 4px;
+        }
+        .section {
+            margin-bottom: 26px;
+        }
+        .section h2 {
+            font-size: 17px;
+            color: #1b365d;
+            text-transform: uppercase;
+            letter-spacing: 0.8px;
+            border-bottom: 2px solid #e0e6ed;
+            padding-bottom: 6px;
+            margin-bottom: 14px;
+        }
+        .intro-text {
+            font-size: 14.5px;
+            color: #444;
+            text-align: justify;
+        }
+        .item {
+            margin-bottom: 16px;
+        }
+        .item-title {
+            font-weight: 700;
+            font-size: 15.5px;
+            color: #1d2d44;
+        }
+        .item-sub {
+            font-size: 13px;
+            color: #6c757d;
+            font-style: italic;
+            margin: 2px 0 6px;
+        }
+        .item ul {
+            padding-left: 18px;
+            font-size: 14px;
+            color: #444;
+        }
+        .item ul li {
+            margin-bottom: 4px;
+        }
+        a {
+            color: #a8dadc;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .right-column a {
+            color: #1b365d;
+            font-weight: 600;
+        }
+        @media (max-width: 720px) {
+            .cv-container {
+                flex-direction: column;
+            }
+            .left-column, .right-column {
+                width: 100%;
+            }
+            .right-column {
+                padding: 30px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="cv-container">
+    <div class="left-column">
+        <img src="anh dai dien.jpg" alt="Tạ Quang Tú Anh" class="avatar" onerror="this.src='https://via.placeholder.com/150?text=Tu+Anh'">
+        
+        <h2>Thông tin liên hệ</h2>
+        <ul class="info-list">
+            <li><strong>Ngày sinh:</strong> 13/03/2008</li>
+            <li><strong>MSSV:</strong> 52.01.104.009</li>
+            <li><strong>Email:</strong> tqta2008@gmail.com</li>
+            <li><strong>Nơi ở:</strong> Phường Chánh Hưng, TP. Hồ Chí Minh</li>
+            <li><strong>GitHub:</strong> <a href="https://github.com/TaQuangTuAnh-5201104009" target="_blank">TaQuangTuAnh-5201104009</a></li>
+        </ul>
+
+        <h2>Kỹ năng chuyên môn</h2>
+        <div>
+            <span class="skill-tag">C++</span>
+            <span class="skill-tag">HTML5</span>
+            <span class="skill-tag">CSS3</span>
+            <span class="skill-tag">JavaScript</span>
+            <span class="skill-tag">Bootstrap</span>
+            <span class="skill-tag">Git / GitHub</span>
+            <span class="skill-tag">VS Code</span>
+        </div>
+
+        <h2>Kỹ năng mềm</h2>
+        <ul class="info-list">
+            <li>• Tư duy logic & giải quyết vấn đề</li>
+            <li>• Tự học và nghiên cứu tài liệu</li>
+            <li>• Làm việc nhóm & quản lý thời gian</li>
+        </ul>
+    </div>
+
+    <div class="right-column">
+        <div class="header-name">
+            <h1>Tạ Quang Tú Anh</h1>
+            <p>Sinh viên Công nghệ Thông tin</p>
+        </div>
+
+        <div class="section">
+            <h2>Giới thiệu bản thân</h2>
+            <p class="intro-text">
+                Là sinh viên năm nhất ngành Công nghệ Thông tin tại Trường Đại học Sư phạm TP.HCM, mình có niềm yêu thích đặc biệt với việc biến những dòng code logic thành các sản phẩm trực quan trên nền tảng Web. Với nền tảng tư duy giải thuật từ C++ cùng kỹ năng xây dựng giao diện bằng HTML, CSS và JavaScript, mình luôn chủ động tìm tòi công nghệ mới qua từng dự án thực hành, hướng tới mục tiêu trở thành một Lập trình viên Web chuyên nghiệp.
+            </p>
+        </div>
+
+        <div class="section">
+            <h2>Học vấn</h2>
+            <div class="item">
+                <div class="item-title">Trường Đại học Sư phạm TP. Hồ Chí Minh (HCMUE)</div>
+                <div class="item-sub">2026 - Hiện tại | Chuyên ngành: Công nghệ Thông tin</div>
+                <ul>
+                    <li>Các học phần tiêu biểu: Lập trình cơ bản (C++), Thiết kế Web, Cơ sở toán trong CNTT.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Dự án học tập</h2>
+            <div class="item">
+                <div class="item-title">Website Cá nhân & Bài tập Thiết kế Web</div>
+                <div class="item-sub">Công nghệ: HTML5, CSS3, JavaScript, Bootstrap, GitHub Pages</div>
+                <ul>
+                    <li>Xây dựng trang hồ sơ cá nhân, trang CV trực tuyến và ứng dụng mô phỏng hồ cá (Aquarium).</li>
+                    <li>Thực hành xử lý sự kiện DOM và xây dựng các chức năng tương tác bằng JavaScript.</li>
+                    <li>Trang web: <a href="https://TaQuangTuAnh-5201104009.github.io" target="_blank">TaQuangTuAnh-5201104009.github.io</a></li>
+                </ul>
+            </div>
+
+            <div class="item">
+                <div class="item-title">Bài tập Giải thuật & Lập trình C++</div>
+                <div class="item-sub">Công nghệ: C++, Visual Studio Code</div>
+                <ul>
+                    <li>Giải quyết các bài toán về cấu trúc điều khiển, vòng lặp, xử lý mảng, chuỗi và tối ưu hóa thuật toán cơ bản.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
